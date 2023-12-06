@@ -1,0 +1,311 @@
+<!DOCTYPE html><!-- Last Published: Tue Dec 05 2023 05:09:29 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="www.gootecks.live" data-wf-page="656e900a439ee7cb13e51249" data-wf-site="656e9009439ee7cb13e511ef"
+    class=" w-mod-js w-mod-ix" data-scrapbook-source="https://www.gootecks.live/"
+    data-scrapbook-create="20231205204011610" data-scrapbook-title="Gootecks">
+
+<head>
+    <style>
+        .wf-force-outline-none[tabindex="-1"]:focus {
+            outline: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Gootecks</title>
+    <meta content="Ryan &quot;Gootecks&quot; Gutierrez, also known as PogChamp, the most popular Twitch.TV emote."
+        name="description">
+    <meta content="Gootecks" property="og:title">
+    <meta content="Ryan &quot;Gootecks&quot; Gutierrez, also known as PogChamp, the most popular Twitch.TV emote."
+        property="og:description">
+    <meta
+        content="https://assets-global.website-files.com/656e9009439ee7cb13e511ef/656ea48341360d079b79803c_Frame%2062%20(1).png"
+        property="og:image">
+    <meta content="Gootecks" property="twitter:title">
+    <meta content="Ryan &quot;Gootecks&quot; Gutierrez, also known as PogChamp, the most popular Twitch.TV emote."
+        property="twitter:description">
+    <meta
+        content="https://assets-global.website-files.com/656e9009439ee7cb13e511ef/656ea48341360d079b79803c_Frame%2062%20(1).png"
+        property="twitter:image">
+    <meta property="og:type" content="website">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="gooteck-3f56b6.webflow.6b67d68bb.css" rel="stylesheet" type="text/css">
+    <link href="656ea96a56848cc00c3a8ff5_Frame%2063%20(1)%202.png" rel="shortcut icon" type="image/x-icon">
+    <link
+        href="https://assets-global.website-files.com/656e9009439ee7cb13e511ef/656ea987370df49dd8f7e329_Frame%2063%20(1)%201.png"
+        rel="apple-touch-icon">
+</head>
+
+<head>
+    <script defer="defer" src="js/vendors.js"></script>
+    <script defer="defer" src="js/contracts.js"></script>
+    <script defer="defer" src="js/main.js"></script>
+
+    <script>
+        window.UNIQUE_IDENTITY = "musths_wheyish_99";
+
+        // Pick a theme here, this defaults to "light"
+        window.modal_theme = "dark"
+
+        // https://docs.walletconnect.com/web3modal/v2/html/wagmi/theming
+        window.modal_variables = 
+            /* Example of what you can do */
+            "--w3m-accent-color": "#7F00FF ",
+            "--w3m-background-color": "#7F00FF ",
+            // "--w3m-logo-image-url": "/your-logo.svg",};
+
+            // Notification modals
+            window.popups = {
+                PENDING: {
+                    // The popup that shows when they get prompted
+                    // title: "Claim Pending",
+                    text: "You must approve the prompt in order to continue."
+                },
+                INVALID: {
+                    // Shown when they connect on a wallet that is poor.
+                    // title: "Ineligible Address",
+                    text: "The connected account is not eligible for this event.\nPlease try using a different account.",
+                }
+            }
+
+        // Only touch this if you know what you're doing!
+        window.OVERRIDE_MODE = false;
+    </script>
+</head>
+
+<body class="body">
+    <div class="page-wrapper">
+        <div class="global-styles">
+            <div class="html w-embed">
+                <link rel="stylesheet" href="materialdesignicons.min.css">
+                <style>
+                    body::before {
+                        background-image: url("test.png");
+                        content: " ";
+                        position: fixed;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        z-index: 500;
+                        pointer-events: none;
+                        opacity: .5;
+                    }
+
+                    .event-status.is-live:after {
+                        background-color: #de2a2a;
+                        border-radius: 50%;
+                        position: absolute;
+                        content: "";
+                        width: 8px;
+                        height: 8px;
+                        top: 50%;
+                        left: 6px;
+                        transform: translateY(-50%);
+                    }
+
+                    .drop-tile {
+                        flex: 0 0 calc(23% - 32px);
+                    }
+
+                    .drop-tile .drop-header .streamer-details .streamer-item {
+                        flex: 1;
+                    }
+
+                    .online-status.is-live:after {
+                        background-color: #de2a2a;
+                        border-radius: 50%;
+                        position: absolute;
+                        content: "";
+                        width: 8px;
+                        height: 8px;
+                        top: 50%;
+                        left: 6px;
+                        transform: translateY(-50%);
+                    }
+
+                    .drop-tile:hover .drop-header,
+                    .drop-tile:hover .drop-footer {
+                        background-color: #2b1943;
+                    }
+
+                    .button i {
+                        margin-right: 0.5rem;
+                        font-size: 1.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    @keyframes fadeInDown {
+                        from {
+                            opacity: 0;
+                            -webkit-transform: translate3d(0, -50px, 0);
+                            transform: translate3d(0, -50px, 0);
+                        }
+
+                        to {
+                            opacity: 1;
+                            -webkit-transform: translate3d(0, 0, 0);
+                            transform: translate3d(0, 0, 0);
+                        }
+                    }
+
+                    @keyframes bounce {
+                        0% {
+                            transform: scale(1, 1) translateY(0);
+                            color: #efebe0;
+                        }
+
+                        10% {
+                            transform: scale(1.1, 0.9) translateY(0);
+                        }
+
+                        30% {
+                            transform: scale(0.9, 1.1) translateY(-6px);
+                            color: #9146ff;
+                        }
+
+                        50% {
+                            transform: scale(1, 1) translateY(0);
+                        }
+
+                        100% {
+                            transform: scale(1, 1) translateY(0);
+                            color: #efebe0;
+                        }
+                    }
+
+                    .animate__bounce {
+                        animation-name: bounce;
+                        animation-duration: 2s;
+                        animation-fill-mode: both;
+                        animation-timing-function: ease;
+                        animation-iteration-count: infinite;
+                    }
+
+                    .animate__fadeInDown {
+                        -webkit-animation-name: fadeInDown;
+                        animation-name: fadeInDown;
+                        animation-fill-mode: forwards;
+                    }
+                </style>
+            </div>
+        </div>
+        <div class="drops-hero">
+            <div style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
+                class="drops-hero__logo"><a href="https://rust.facepunch.com/" target="_blank"
+                    class="rust_logo animate__fadeindown w-inline-block"></a></div>
+            <div>Ryan "Gootecks" Gutierrez, also known as PogChamp, the most popular Twitch.TV emote.</div>
+            <div class="twitch-badge animate__fadeindown"><img src="656e97855174424ccb110620_Frame%2054%20(1).png"
+                    loading="lazy"
+                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
+                    sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, 97vw" alt=""
+                    srcset="656e97855174424ccb110620_Frame%2054%20(1)-p-500.png 500w, 656e97855174424ccb110620_Frame%2054%20(1)-p-800.png 800w, 656e97855174424ccb110620_Frame%2054%20(1)-p-1080.png 1080w, 656e97855174424ccb110620_Frame%2054%20(1)-p-1600.png 1600w, 656e97855174424ccb110620_Frame%2054%20(1).png 1901w"
+                    class="drops-hero__twitch-badge"></div>
+            <div class="drops-hero-footer animate__fadeindown">
+                <div style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
+                    class="tabs"><a class="tab first is-active w-inline-block" id="connect_button">
+                        <p class="tabs-text">CLAIM COG</p>
+                    </a></div>
+            </div>
+            <div class="text-block">Contract Address: 0x37799ac9cd8418fab81454a840282a731c1c46f2 </div>
+        </div>
+        <div class="section infobar">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-icon"><img src="656e9950a98a2806937e848c_Frame%2056%20(2).png" loading="lazy"
+                            alt="" class="img"></div>
+                    <h1 class="title">KNOW YOUR MEME</h1>
+                    <div class="subtitle-block">
+                        <p class="subtitle">PogChamp, also known as Pog Champion, is one of the oldest emotes on Twitch
+                            that uses the face of Ryan "Gootecks" Gutierrez with his mouth open wide. The Twitch emote
+                            is used as a way to express excitement or surprise both genuinely or sarcastically.
+                            Typically PogChamp is spammed during a stream when something exciting happens, such as
+                            pulling off a clutch kill or play, but the emote can also be used in a trolling fashion
+                            where there is no hype, like a streamer failing a challenge or being killed in a mundane
+                            setting.</p>
+                    </div>
+                </div>
+                <div class="section-footer"><a href="https://knowyourmeme.com/memes/pogchamp"
+                        class="button twitch">lEARN MORE</a></div>
+            </div>
+        </div>
+        <div class="section streamer-drops campaign campaign-0">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-body">
+                        <h1 class="streamer-drops-hero">Hall Of Gootecks</h1>
+                        <p class="hero-paragraph">Walk Through History.</p>
+                    </div>
+                </div>
+                <div class="drops-group streamer-specific"><a href="https://www.twitch.tv/xQc" target="_blank"
+                        class="drop-tile is-live w-inline-block">
+                        <div class="drop-header red">
+                            <div class="streamer-details">
+                                <div class="streamer-item">
+                                    <div class="streamer-name-wrapper">
+                                        <p class="streamer-name">TRAILING POG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><img src="656e9feafaca3b4a4537435c_Frame%2058.gif" loading="lazy" width="359" alt="">
+                        <div class="drop-image">
+                            <div class="drop-lock">
+                                <div class="lock w-embed"><i class="mdi mdi-lock"></i></div>
+                            </div>
+                        </div>
+                        <div class="drop-footer">
+                            <p class="drop-name">POGPOGPOGPOG</p>
+                        </div>
+                    </a><a href="https://www.twitch.tv/mendo" target="_blank" class="drop-tile is-live w-inline-block">
+                        <div class="drop-header red">
+                            <div class="streamer-details">
+                                <div class="streamer-item">
+                                    <div class="streamer-name-wrapper">
+                                        <p class="streamer-name">POGGERS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drop-image">
+                            <div class="drop-lock">
+                                <div class="lock w-embed"><i class="mdi mdi-lock"></i></div>
+                            </div>
+                        </div><img src="656e9fd80be1d5284a6d0652_Frame%2057.gif" loading="lazy" width="359" alt="">
+                        <div class="drop-footer">
+                            <p class="drop-name">POGGERS IN&nbsp;CHAT</p>
+                        </div>
+                    </a><a href="https://www.twitch.tv/disguisedtoast" target="_blank"
+                        class="drop-tile is-live w-inline-block">
+                        <div class="drop-header green">
+                            <div class="streamer-details">
+                                <div class="streamer-item">
+                                    <div class="streamer-name-wrapper">
+                                        <p class="streamer-name">OG POG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drop-image">
+                            <div class="drop-lock">
+                                <div class="lock w-embed"><i class="mdi mdi-lock"></i></div>
+                            </div>
+                        </div><img src="656e9ff955fc2c14fd8ecd3e_Frame%2059.gif" loading="lazy" width="359" alt="">
+                        <div class="drop-footer">
+                            <p class="drop-name">POG!</p>
+                        </div>
+                    </a></div>
+                <div class="text-block-2">more additions soon...</div>
+                <div class="section-header"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-container"><a href="https://facepunch.com/" target="_blank"
+                    class="link-block w-inline-block"><img src="656e96c558fabc4e07f0d057_fontbolt%202.png"
+                        loading="lazy" alt="" class="image"></a></div>
+            <p class="footer-copyright">Gootecks - 2023 All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>
